@@ -1,0 +1,16 @@
+name: Ping API
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping endpoint every 30 seconds
+        run: |
+          for i in {1..2}
+          do
+            curl https://mileage-app.onrender.com/api/health
+            sleep 30
+          done
