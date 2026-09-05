@@ -12,5 +12,8 @@ jobs:
           for i in {1..2}
           do
             curl https://mileage-app.onrender.com/api/health
+            curl https://mileage-app-1.onrender.com/api/health
+            curl https://mileage-app-2.onrender.com/api/health
+            curl https://mileage-app-3.onrender.com/api/health
             sleep 29
           done
