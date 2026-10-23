@@ -17,10 +17,6 @@ jobs:
             echo "===== Ping $i ====="
 
             curl -fsS https://mileage-app.onrender.com/api/health
-            curl -fsS https://mileage-app-1.onrender.com/api/health
-            curl -fsS https://mileage-app-2.onrender.com/api/health
-            curl -fsS https://mileage-app-3.onrender.com/api/health
-
             if [ "$i" -lt 2 ]; then
               echo "Waiting 29 seconds..."
               sleep 29
