@@ -19,7 +19,7 @@ jobs:
               || echo "Curl failed, continuing to next iteration"
 
             if [ "$i" -lt 2 ]; then
-              echo "Waiting 29 seconds..."
+              echo -e "\n -> Waiting 29 seconds..."
               sleep 29
             fi
           done
