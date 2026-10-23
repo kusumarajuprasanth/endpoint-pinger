@@ -16,7 +16,7 @@ jobs:
 
             curl -fsS --max-time 10 \
               https://mileage-app.onrender.com/api/health \
-              || echo "Curl failed, continuing to next iteration"
+              || echo -e "Curl failed, continuing to next iteration"
 
             if [ "$i" -lt 2 ]; then
               echo -e "\n -> Waiting 29 seconds..."
